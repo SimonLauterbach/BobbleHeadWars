@@ -18,5 +18,7 @@ public class PlayerController : MonoBehaviour
 
         pos.x += moveSpeed * Input.GetAxis("Horizontal") * Time.deltaTime;
         pos.z += moveSpeed * Input.GetAxis("Vertical") * Time.deltaTime;
+
+        transform.position = pos;
     }
 }
