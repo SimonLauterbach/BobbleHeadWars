@@ -383,7 +383,7 @@ GameObject:
   - component: {fileID: 89764587}
   - component: {fileID: 89764589}
   - component: {fileID: 89764588}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Eyebrow under.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -535,7 +535,7 @@ GameObject:
   - component: {fileID: 202938049}
   - component: {fileID: 202938051}
   - component: {fileID: 202938050}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: mohawk
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -647,7 +647,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 206323736}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -765,7 +765,8 @@ GameObject:
   - component: {fileID: 1289241247}
   - component: {fileID: 1289241249}
   - component: {fileID: 1289241248}
-  m_Layer: 0
+  - component: {fileID: 1289241250}
+  m_Layer: 13
   m_Name: BobbleMarine-Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1467,7 +1468,7 @@ GameObject:
   - component: {fileID: 613352348}
   - component: {fileID: 613352350}
   - component: {fileID: 613352349}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Eyebrow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1619,6 +1620,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100078, guid: 7f78b096b427d419f9918e4ae4fc4aec, type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7f78b096b427d419f9918e4ae4fc4aec, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -1724,7 +1729,7 @@ GameObject:
   - component: {fileID: 691552026}
   - component: {fileID: 691552028}
   - component: {fileID: 691552027}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: head inside bottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3312,7 +3317,7 @@ GameObject:
   - component: {fileID: 1265589626}
   - component: {fileID: 1265589628}
   - component: {fileID: 1265589627}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Mouthpiece
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3497,7 +3502,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: 1}
   m_AutoConfigureConnectedAnchor: 0
-  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
+  m_ConnectedAnchor: {x: -2.06, y: 6.16, z: 0.16}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -3508,11 +3513,11 @@ HingeJoint:
     targetVelocity: 0
     force: 0
     freeSpin: 0
-  m_UseLimits: 0
+  m_UseLimits: 1
   m_Limits:
-    min: 0
-    max: 0
-    bounciness: 0
+    min: -25
+    max: 25
+    bounciness: 1
     bounceMinVelocity: 0.2
     contactDistance: 0
   m_BreakForce: Infinity
@@ -3537,6 +3542,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!135 &1289241250
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 271165072}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 2.36
+  m_Center: {x: 0.41, y: 2.7, z: -0.21}
 --- !u!1 &1290506907
 GameObject:
   m_ObjectHideFlags: 0
@@ -3617,6 +3635,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 50
+  head: {fileID: 1289241249}
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 4096
 --- !u!143 &1340078470
 CharacterController:
   m_ObjectHideFlags: 0
@@ -3646,7 +3668,7 @@ GameObject:
   - component: {fileID: 1342807569}
   - component: {fileID: 1342807571}
   - component: {fileID: 1342807570}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Cheek detail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3872,7 +3894,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1392602006}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: World Centre
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4286,7 +4308,7 @@ GameObject:
   - component: {fileID: 1566321688}
   - component: {fileID: 1566321690}
   - component: {fileID: 1566321689}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Eyebrow.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4908,7 +4930,7 @@ GameObject:
   - component: {fileID: 1820932867}
   - component: {fileID: 1820932869}
   - component: {fileID: 1820932868}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Chin Guard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5074,7 +5096,7 @@ GameObject:
   - component: {fileID: 1827223121}
   - component: {fileID: 1827223123}
   - component: {fileID: 1827223122}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Eyebrow under
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5272,7 +5294,7 @@ GameObject:
   - component: {fileID: 1970760184}
   - component: {fileID: 1970760186}
   - component: {fileID: 1970760185}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Helmet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6125,6 +6147,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 747495049759568487, guid: c7d3b1363dffe964fb4480c55aeeb49b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 1556766986228876553, guid: c7d3b1363dffe964fb4480c55aeeb49b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 1827289929998189378, guid: c7d3b1363dffe964fb4480c55aeeb49b, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -6169,6 +6199,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1827289929998189379, guid: c7d3b1363dffe964fb4480c55aeeb49b, type: 3}
+      propertyPath: layerMask.m_Bits
+      value: 4096
+      objectReference: {fileID: 0}
     - target: {fileID: 1827289929998189381, guid: c7d3b1363dffe964fb4480c55aeeb49b, type: 3}
       propertyPath: m_Name
       value: SpaceMarine
@@ -6176,6 +6210,50 @@ PrefabInstance:
     - target: {fileID: 1827289929998189381, guid: c7d3b1363dffe964fb4480c55aeeb49b, type: 3}
       propertyPath: m_Layer
       value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 4207042224778370324, guid: c7d3b1363dffe964fb4480c55aeeb49b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 4647451707499784994, guid: c7d3b1363dffe964fb4480c55aeeb49b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 4838427901243609377, guid: c7d3b1363dffe964fb4480c55aeeb49b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 5382666256311091714, guid: c7d3b1363dffe964fb4480c55aeeb49b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 6403449242885529048, guid: c7d3b1363dffe964fb4480c55aeeb49b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 7295745840788311156, guid: c7d3b1363dffe964fb4480c55aeeb49b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 7463275940926479415, guid: c7d3b1363dffe964fb4480c55aeeb49b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 7468642261594438397, guid: c7d3b1363dffe964fb4480c55aeeb49b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 7520483866571023633, guid: c7d3b1363dffe964fb4480c55aeeb49b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 7781616750236556333, guid: c7d3b1363dffe964fb4480c55aeeb49b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 9053947034582903433, guid: c7d3b1363dffe964fb4480c55aeeb49b, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
