@@ -2300,10 +2300,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5351206246028336397, guid: 37ee1a2991402ee4284bc2103733a847, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: eb1ede1cfe0c0dc48af3da2f2dc29be8, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 37ee1a2991402ee4284bc2103733a847, type: 3}
 --- !u!1001 &847265047
@@ -2837,6 +2833,7 @@ GameObject:
   - component: {fileID: 1688110263}
   - component: {fileID: 1688110264}
   - component: {fileID: 1688110265}
+  - component: {fileID: 1688110266}
   m_Layer: 0
   m_Name: BobbleMarine-Body
   m_TagString: Untagged
@@ -4801,6 +4798,26 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!95 &1688110266
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 992366020}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e9f55418116f1c3428bed00bbc8c3cd3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1692286315
 GameObject:
   m_ObjectHideFlags: 0
