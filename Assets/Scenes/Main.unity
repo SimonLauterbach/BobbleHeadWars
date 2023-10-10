@@ -3780,6 +3780,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 50
   head: {fileID: 1289241249}
+  bodyAnimator: {fileID: 1688110266}
   layerMask:
     serializedVersion: 2
     m_Bits: 4096
