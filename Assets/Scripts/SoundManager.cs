@@ -16,6 +16,11 @@ public class SoundManager : MonoBehaviour
     public AudioClip powerUpPickup;
     public AudioClip powerUpAppear;
 
+    public void PlayOneShot(AudioClip clip)
+    {
+        soundEffectAudio.PlayOneShot(clip);
+    }
+
     // Start is called before the first frame update
     void Start()
     {
