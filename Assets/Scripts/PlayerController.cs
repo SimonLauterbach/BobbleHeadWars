@@ -19,6 +19,24 @@ public class PlayerController : MonoBehaviour
     private bool isHit = false;
     private float timeSinceHit = 0;
     private int hitNumber = -1;
+    public Rigidbody marineBody;
+    private bool isDead = false;
+
+    public void Die()
+    {
+        bodyAnimator.SetBool("IsMoving", false);
+        marineBody.transform.parent = null;
+        marineBody.isKinematic = false;
+        marineBody.useGravity = true;
+        marineBody.gameObject.GetComponent<CapsuleCollider>().enabled = true;
+        marineBody.gameObject.GetComponent<Gun>().enabled = false;
+        Destroy(head.gameObject.GetComponent<HingeJoint>());
+        head.transform.parent = null;
+        head.useGravity = true;
+        SoundManager.Instance.PlayOneShot(SoundManager.Instance.marineDeath);
+        Destroy(gameObject);
+    }
+
 
     // Start is called before the first frame update
     void Start()
@@ -93,7 +111,7 @@ public class PlayerController : MonoBehaviour
                 }
                 else
                 {
-                    // death todo
+                    Die();
                 }
                 isHit = true; // 4
                 SoundManager.Instance.PlayOneShot(SoundManager.Instance.hurt);
