@@ -22,6 +22,8 @@ public class PlayerController : MonoBehaviour
     public Rigidbody marineBody;
     private bool isDead = false;
 
+    private DeathParticles deathParticles;
+
     public void Die()
     {
         bodyAnimator.SetBool("IsMoving", false);
@@ -30,6 +32,7 @@ public class PlayerController : MonoBehaviour
         marineBody.useGravity = true;
         marineBody.gameObject.GetComponent<CapsuleCollider>().enabled = true;
         marineBody.gameObject.GetComponent<Gun>().enabled = false;
+        deathParticles.Activate();
         Destroy(head.gameObject.GetComponent<HingeJoint>());
         head.transform.parent = null;
         head.useGravity = true;
@@ -42,6 +45,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         characterController = GetComponent<CharacterController>();
+        deathParticles = gameObject.GetComponentInChildren<DeathParticles>();
     }
 
     // Update is called once per frame
